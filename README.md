@@ -4,7 +4,7 @@ Este proyecto es una aplicación web que permite a los usuarios gestionar los me
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 **Frontend:**
 
@@ -19,7 +19,7 @@ Este proyecto es una aplicación web que permite a los usuarios gestionar los me
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 MEDIGROUP_INVENTARIO_V2/
 ├── src/                       # Código fuente principal
@@ -37,31 +37,31 @@ MEDIGROUP_INVENTARIO_V2/
 ## Intrucciones para ejecutar el proyecto
 
 
-### Requisitos
+## Requisitos
 
 - [Node.js] v24.4
 - [npm] 11.4.2
 
-### 1. Clonar repositorio
+## 1. Clonar repositorio
 
     bash
     git clone https://github.com/carlos-283/medigroupV2.git
 
-### 2. Instalar dependencias 
+## 2. Instalar dependencias 
 
     npm install
 
-### 3. Añadir variables de ambiente 
+## 3. Añadir variables de ambiente 
 
     Crear un archivo .env en la carpeta raiz y agregar la siguiente variable
     
     DATABASE_URL="sqlserver://localhost;database=medigroup;user=abc;password=123;trustServerCertificate=true;"
 
-### 3. Crear base de datos
+## 3. Crear base de datos
 
     ejecutar archivo query.sql almacenado en la carpeta raiz
 
-### 3. Corre proyecto localmente
+## 3. Corre proyecto localmente
 
     npm run dev
 
