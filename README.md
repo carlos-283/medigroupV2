@@ -1,40 +1,71 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto Gestor medigroup
 
-## Getting Started
+Este proyecto es una aplicación web que permite a los usuarios gestionar los medicamentos, desde ver el listado de medicamentos existentes, agregar,editar, y eliminar registros
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologías utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Frontend:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Next js
+- Javascript
+- Tailwind
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Backend:**
 
-## Learn More
+- Next Api
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Estructura del proyecto
 
-## Deploy on Vercel
+MEDIGROUP_INVENTARIO_V2/
+├── src/                       # Código fuente principal
+│   ├── components/            # Componentes reutilizables 
+│   ├── App/                   # Páginas principales del proyecto
+│   │   └── api/               # Rutas API (Next.js API Routes)
+│
+├── prisma/                   # Archivos de esquema de base de datos Prisma
+│   └── schema.prisma         # Definición del modelo de datos
+│
+├── query.sql                 # Script SQL de creación de base de datos y tablas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# medigroupV2
->>>>>>> 2a37dc560f85745a5a3807a4cec93bcef51ce477
+
+## Intrucciones para ejecutar el proyecto
+
+
+### Requisitos
+
+- [Node.js] v24.4
+- [npm] 11.4.2
+
+### 1. Clonar repositorio
+
+    bash
+    git clone https://github.com/carlos-283/medigroupV2.git
+
+### 2. Instalar dependencias 
+
+    npm install
+
+### 3. Añadir variables de ambiente 
+
+    Crear un archivo .env en la carpeta raiz y agregar la siguiente variable
+    
+    DATABASE_URL="sqlserver://localhost;database=medigroup;user=abc;password=123;trustServerCertificate=true;"
+
+### 3. Crear base de datos
+
+    ejecutar archivo query.sql almacenado en la carpeta raiz
+
+### 3. Corre proyecto localmente
+
+    npm run dev
+
+### 3. Ingresa al sitio
+
+   http://localhost:3000/medicamentos
+
